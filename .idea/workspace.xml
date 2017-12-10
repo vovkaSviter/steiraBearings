@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b01e15ad-cefd-426b-abc9-762be5b3555d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/commonRules.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/main.html" afterPath="$PROJECT_DIR$/html/main.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +28,18 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+            <state relative-caret-position="252">
+              <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commonRules.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/commonRules.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -40,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,6 +61,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/css/commonRules.css" />
         <option value="$PROJECT_DIR$/html/main.html" />
       </list>
     </option>
@@ -113,6 +126,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -136,12 +150,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512900103644</updated>
-      <workItem from="1512900107138" duration="2300000" />
+      <workItem from="1512900107138" duration="3711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2300000" />
+    <option name="totallyTimeSpent" value="3711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1298" height="994" extended-state="6" />
@@ -185,10 +199,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/commonRules.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+        <state relative-caret-position="252">
+          <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
           <folding />
         </state>
       </provider>
