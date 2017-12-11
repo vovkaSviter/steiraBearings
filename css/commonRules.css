@@ -1,6 +1,7 @@
 /*Contents
 
     a. Overall styles
+        a.1. Colour scheme
     b. Backbone
         b.1. Main Backbone
             b.1.1. Header
@@ -20,11 +21,15 @@
         src: url(../fonts/RobotoCondensed-Bold.ttf);
     }
     @font-face {
+        font-family: RCBoldItalic;
+        src: url(../fonts/RobotoCondensed-BoldItalic.ttf);
+    }
+    @font-face {
         font-family: RCItalic;
         src: url(../fonts/RobotoCondensed-Italic.ttf);
     }
-
     body{
+        margin: 0;
         background: white;
         font-family: RCRegular;
         font-size: 1rem;
@@ -43,8 +48,71 @@
             margin-bottom: 1.2777778rem;
         }
 
+        .smallTxt{
+            font-size: .75rem;
+        }
+
+        /*a.1. Colour scheme*/
+            .schemeBlueTxt{
+                color: #0072bc;
+            }
+            .schemeRedTxt{
+                color: #e10908;
+            }
+
+
+
 /*b. Backbone*/
 
     /*b.1. Main Backbone*/
 
         /*b.1.1. Header*/
+            .logo{
+                background: url("../imgs/logo.png") center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .phoneNumbers{
+                font-family: RCBoldItalic;
+                font-size: .75rem;
+                line-height: .95833335rem;
+                margin-top: .95833335rem;
+                margin-bottom: .95833335rem;
+            }
+            .searchKeeper{
+                margin-top: 2.5555556rem;
+                padding-bottom: 10.2222224rem;
+                background: url("../imgs/headerBG.png") center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+                .searchKeeper h1{
+                    text-align: center;
+                }
+
+                .searchKeeper form{
+
+                }
+                    .searchKeeper form input{
+                        width: 80%;
+                        float: left;
+                    }
+
+                    .searchKeeper form label{
+                        display: block;
+                        float: right;
+                        width: 20%;
+                        text-align: center;
+                    }
+                .searchKeeper p{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                    .searchKeeper p span.smallTxt{
+                        border-bottom: dashed 1px black;
+                    }
+
+                .searchKeeper a.smallTxt{
+                    text-align: right;
+
+                }
