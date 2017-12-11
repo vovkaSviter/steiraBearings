@@ -7,9 +7,41 @@
 */
 
 /*a. Overall styles*/
+    @font-face {
+        font-family: RCLight;
+        src: url(../fonts/RobotoCondensed-Light.ttf);
+    }
+    @font-face {
+        font-family: RCRegular;
+        src: url(../fonts/RobotoCondensed-Regular.ttf);
+    }
+    @font-face {
+        font-family: RCBold;
+        src: url(../fonts/RobotoCondensed-Bold.ttf);
+    }
+    @font-face {
+        font-family: RCItalic;
+        src: url(../fonts/RobotoCondensed-Italic.ttf);
+    }
+
     body{
         background: white;
+        font-family: RCRegular;
+        font-size: 1rem;
+        line-height: 1.2777778rem;
     }
+        h1{
+            font-size: 1.2222222rem;
+            line-height: 1.2777778rem;
+            margin-top: 1.2777778rem;
+            margin-bottom: 2.5555556rem;
+        }
+        h2{
+            font-size: 1.1111111rem;
+            line-height: 1.2777778rem;
+            margin-top: 1.2777778rem;
+            margin-bottom: 1.2777778rem;
+        }
 
 /*b. Backbone*/
 
