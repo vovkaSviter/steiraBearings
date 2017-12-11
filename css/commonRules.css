@@ -5,6 +5,7 @@
     b. Backbone
         b.1. Main Backbone
             b.1.1. Header
+            b.1.2. Advantages
 */
 
 /*a. Overall styles*/
@@ -35,11 +36,13 @@
         font-size: 1rem;
         line-height: 1.2777778rem;
     }
-        h1{
+        h1,
+        .h1Like{
             font-size: 1.2222222rem;
             line-height: 1.2777778rem;
             margin-top: 1.2777778rem;
             margin-bottom: 2.5555556rem;
+            font-weight: bold;
         }
         h2{
             font-size: 1.1111111rem;
@@ -50,6 +53,7 @@
 
         .smallTxt{
             font-size: .75rem;
+            line-height: .95833335rem;
         }
 
         /*a.1. Colour scheme*/
@@ -129,3 +133,34 @@
                     text-align: right;
 
                 }
+
+    /*b.1.2. Advantages*/
+        .mainAdvantages{
+            border: solid 5px rgba(0,0,0,.25);
+            margin-top: 2.5555556rem;
+        }
+            .mainAdvantages .h1Like{
+                margin-top: -1.2777778rem;
+                margin-bottom: 1.2777778rem;
+                padding-top: .6388889rem;
+                text-align: center;
+                background: white;
+            }
+
+            .mainAdvantages .advItem{
+                text-align: center;
+            }
+                .mainAdvantages h2{
+                    position: relative;
+                }
+                    .mainAdvantages h2:after{
+                        content: '';
+                        display: block;
+                        position: relative;
+                        left: 45%;
+                        bottom: -.6388889rem;
+                        width: 10%;
+                        height: 1px;
+                        background: #e10908;
+
+                    }
