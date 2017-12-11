@@ -150,6 +150,15 @@
             .mainAdvantages .advItem{
                 text-align: center;
             }
+                .mainAdvantages .imgKeeper{
+                    width: 25%;
+                    margin-left: 37.5%;
+                }
+                    .mainAdvantages .imgKeeper img{
+                        width: 100%;
+                        height: auto;
+                    }
+
                 .mainAdvantages h2{
                     position: relative;
                 }
