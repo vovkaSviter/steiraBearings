@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+
+    <!--Owl-->
+    <link rel="stylesheet" href="../owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlCarousel/dist/assets/owl.theme.default.min.css">
+    <!--End of Owl-->
+
     <link rel="stylesheet" href="../css/grid12.css">
     <link rel="stylesheet" href="../css/commonRules.css">
 </head>
@@ -108,7 +114,16 @@
                     </div>
                 </div>
             </section>
-            <section class="col-xs-12 col-md-offset-1 col-md-10 mainClients">Clients</section>
+            <section class="col-xs-12 col-md-offset-1 col-md-10 mainClients">
+                <div class="owl-carousel">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </section>
             <section class="col-xs-12 col-md-offset-1 col-md-10 mainContacts">Contacts</section>
             <footer class="col-xs-12 col-md-offset-1 col-md-10 mainFooter">Copyright</footer>
         </div>
@@ -116,5 +131,18 @@
 
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/crutchesForHTML.js"></script>
+<script src="../owlCarousel/dist/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel(
+            options = {
+                items: 2,
+                nav: true,
+                dots: false
+            }
+        );
+    });
+</script>
+
 </body>
 </html>
