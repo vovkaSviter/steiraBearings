@@ -5,4 +5,8 @@ $(document).ready(function(){
         $('.logo').css('height' , phoneHeight);
     });
 
+    $(function(){
+
+    });
+
 });
