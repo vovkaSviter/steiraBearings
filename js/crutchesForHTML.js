@@ -6,7 +6,8 @@ $(document).ready(function(){
     });
 
     $(function(){
-
+        var aboutHeight = $('.aboutKeeper').outerHeight(true);
+        $('.mainAbout .imgKeeper').css('height' , aboutHeight)
     });
 
 });
