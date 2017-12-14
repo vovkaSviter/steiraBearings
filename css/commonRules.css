@@ -215,7 +215,69 @@
             margin-top: 5.1111112rem;
             margin-bottom: 5.1111112rem;
             border: solid 1px #e10908;
+            padding-bottom: 2.5555556rem;
         }
+            .mainClients .separator{
+                position: relative;
+                top: -2.5555556rem;
+                height: 15px;
+            }
+                .mainClients .separator:before,
+                .mainClients .separator:after{
+                    content: '';
+                    display: block;
+                    width: 30%;
+                    height: 1px;
+                    background: black;
+                    position: absolute;
+                    top: calc(50% - 1px);
+                    left: 0;
+                }
+                .mainClients .separator:after{
+                    left: auto;
+                    right: 0;
+                }
+
+                .mainClients .sepContent{
+                    height: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .mainClients .separator div[class$="Ball"]{
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                }
+                    .mainClients .separator .firstBall div{
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background: black;
+                    }
+                    .mainClients .separator .secondBall div{
+                        width: 7px;
+                        height: 7px;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        background: black;
+                    }
+                    .mainClients .separator .thirdBall div{
+                        width: 10px;
+                        height: 10px;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        background: black;
+                    }
+
+                    .mainClients .separator .fourthBall div{
+                        width: 15px;
+                        height: 15px;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        background: black;
+                    }
+
             .mainClients h2{
                 font-family: RCBoldItalic;
                 background: white;
@@ -253,5 +315,24 @@
                     transform-origin: 74px 98px;
                     transform: rotate(90deg);
                 }
+                .mainClients .owl-nav{
+                    position: absolute;
+                    width: 110%;
+                    top: 50%;
+                    left: -5%;
+                }
+                    .mainClients .owl-nav>*{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .mainClients .owl-nav .owl-next{
+                        left: auto;
+                        right: 0;
+                    }
+                        .mainClients .owl-nav>* img{
+                            width: 15px;
+                            height: 30px;
+                        }
 
 
