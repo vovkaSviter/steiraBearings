@@ -8,6 +8,7 @@
             b.1.2. Advantages
             b.1.3. About
             b.1.4. Clients
+            b.1.5. Footer
 */
 
 /*a. Overall styles*/
@@ -336,3 +337,10 @@
                         }
 
 
+    /*b.1.5. Footer*/
+        footer.mainFooter{
+            border-top: solid 1px black;
+        }
+            footer.mainFooter p{
+                text-align: center;
+            }
