@@ -115,13 +115,43 @@
                 </div>
             </section>
             <section class="col-xs-12 col-md-offset-1 col-md-10 mainClients">
-                <div class="owl-carousel">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
+                <div class="row">
+                    <h2 class="col-xs-6 col-xs-offset-3 col-md-offset-1 col-md-2">Наши клиенты</h2>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel col-xs-12 col-md-offset-1 col-md-10">
+                        <div>
+                            <img src="../imgs/clt1.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt2.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt3.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt4.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt5.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt6.png">
+                        </div>
+
+                        <div>
+                            <img src="../imgs/clt3.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt4.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt5.png">
+                        </div>
+                        <div>
+                            <img src="../imgs/clt6.png">
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="col-xs-12 col-md-offset-1 col-md-10 mainContacts">Contacts</section>
@@ -136,8 +166,17 @@
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel(
             options = {
-                items: 2,
+                items: 6,
+                responsive: {
+                    0 : {
+                        items: 2
+                    },
+                    991 : {
+                        items: 6
+                    }
+                },
                 nav: true,
+                navText: ["<img src='../imgs/prevArr.png'>" , "<img src='../imgs/nextArr1.png'>"],
                 dots: false
             }
         );

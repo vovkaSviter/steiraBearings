@@ -6,7 +6,8 @@
         b.1. Main Backbone
             b.1.1. Header
             b.1.2. Advantages
-            c.1.3. About
+            b.1.3. About
+            b.1.4. Clients
 */
 
 /*a. Overall styles*/
@@ -181,7 +182,7 @@
                         background: #e10908;
 
                     }
-    /*c.1.3. About*/
+    /*b.1.3. About*/
         .mainAbout .imgKeeper{
             background: url("../imgs/about.png") center;
             background-repeat: no-repeat;
@@ -208,3 +209,49 @@
             .mainAbout .about:last-child{
                 margin-top: 1.2777778rem;
             }
+
+    /*b.1.4. Clients*/
+        .mainClients{
+            margin-top: 5.1111112rem;
+            margin-bottom: 5.1111112rem;
+            border: solid 1px #e10908;
+        }
+            .mainClients h2{
+                font-family: RCBoldItalic;
+                background: white;
+                color: #e10908;
+                text-align: center;
+                height: 50px;
+                position: relative;
+                top: -25px;
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 45px;
+                border-bottom: solid 1px #e10908;
+            }
+                .mainClients h2:after{
+                    content: '';
+                    display: block;
+                    width: 26px;
+                    height: 1px;
+                    background: #e10908;
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                    transform-origin: -5px 10px;
+                    transform: rotate(-90deg);
+                }
+                .mainClients h2:before{
+                    content: '';
+                    display: block;
+                    width: 26px;
+                    height: 1px;
+                    background: #e10908;
+                    position: relative;
+                    right: 0;
+                    bottom: 0;
+                    transform-origin: 74px 98px;
+                    transform: rotate(90deg);
+                }
+
+
