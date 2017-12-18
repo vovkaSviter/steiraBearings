@@ -356,9 +356,11 @@
                 position: absolute;
                 width: 33.33333333%;
                 left: 0;
-                top: 0;
+                top: -2.5555556rem;
                 border: solid 2px #0072bc;
                 padding: 15px;
+                background: white;
+                z-index: 1;
             }
                 #feedback>*:not(.toClose){
                     display: block;
@@ -412,3 +414,20 @@
                 margin-bottom: 2.5555556rem;
                 padding: 0;
             }
+
+            .addressKeeper{
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+                .addressKeeper.active{
+                    background: white;
+                    border: solid 1px #0072bc;
+                }
+                .addressKeeper .digit{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: RCBoldItalic;
+                    font-size: 4rem;
+                    color: #0072bc;
+                }

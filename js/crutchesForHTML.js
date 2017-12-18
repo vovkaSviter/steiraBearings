@@ -10,4 +10,10 @@ $(document).ready(function(){
         $('.mainAbout .imgKeeper').css('height' , aboutHeight)
     });
 
+    $(function(){
+        var digit = $('.digit');
+        var addressHeight = digit.next().outerHeight(true);
+        $(digit).css('height' , addressHeight)
+    });
+
 });
