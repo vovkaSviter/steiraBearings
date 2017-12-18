@@ -22,4 +22,16 @@ $(document).ready(function(){
         $('body').css('padding-top' , linkHeight*1.25)
     });
 
+    //    Nav behaviour
+        $(function(){
+           $('.switch').click(function(){
+               $('.mainNavSmall').toggleClass('opened');
+           });
+
+           var title = $('title').text();
+           var display = $('.mainNavSmall .display');
+           $(display).text(title);
+
+        });
+
 });

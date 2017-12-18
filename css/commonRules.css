@@ -41,6 +41,7 @@
         font-family: RCRegular;
         font-size: 1rem;
         line-height: 1.2777778rem;
+        overflow: hidden;
     }
         h1,
         .h1Like{
@@ -496,3 +497,63 @@
                         left: auto;
                         right: 0;
                     }
+            .mainNavSmall{
+                text-align: center;
+                color: white;
+                padding: 15px;
+            }
+                .mainNavSmall .switch div{
+                    width: 35px;
+                    height: 3px;
+                    background: white;
+                    margin: 0 auto 5px;
+                }
+
+                .mainNavSmall .display{
+                    transition: all .5s;
+                }
+
+                .mainNavSmall.opened .display{
+                    visibility: hidden;
+                }
+
+                .mainNavSmall .navList{
+                    list-style: none;
+                    width: 80vw;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    right: -80vw;
+                    background: #e10908;
+                    margin: 0;
+                    padding: 15px;
+                    transition: all .5s;
+                    border-left: solid 1px black;
+                }
+                .mainNavSmall.opened .navList{
+                    right: 0;
+                }
+                    .mainNavSmall .navList li{
+                        text-align: left;
+                        margin-bottom: 15px;
+                        border-bottom: solid 1px white;
+                    }
+
+                    .mainNavSmall .navList li:first-child{
+                        border-bottom: none;
+                        margin-bottom: 30px;
+                    }
+                        .mainNavSmall .navList .switch div:first-child{
+                            transform: rotate(46deg) translateX(7px);
+                        }
+
+                        .mainNavSmall .navList .switch div:last-child{
+                            transform: rotate(-48deg) translateX(4px);
+                        }
+
+                        .mainNavSmall .navList a,
+                        .mainNavSmall .navList a:visited,
+                        .mainNavSmall .navList a:active{
+                            text-decoration: none;
+                            color: white;
+                        }
