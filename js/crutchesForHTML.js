@@ -16,4 +16,10 @@ $(document).ready(function(){
         $(digit).css('height' , addressHeight)
     });
 
+    $(function(){
+        var link = $('.mainNav a');
+        var linkHeight = link.outerHeight();
+        $('body').css('padding-top' , linkHeight*1.25)
+    });
+
 });

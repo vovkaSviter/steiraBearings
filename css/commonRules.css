@@ -11,6 +11,7 @@
             b.1.4. Clients
             b.1.5. Footer
             b.1.6. Contacts
+            b.1.7. Nav
 */
 
 /*a. Overall styles*/
@@ -431,3 +432,67 @@
                     font-size: 4rem;
                     color: #0072bc;
                 }
+
+    /*b.1.7. Nav*/
+        nav.nav{
+            background: linear-gradient(to bottom, #cd0000, #fc1800);
+            border-bottom: solid 2px black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+            .mainNav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .mainNav a,
+                .mainNav a:visited,
+                .mainNav a:active{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                    padding: 1.2222222rem;
+                    font-family: RCBoldItalic;
+                    position: relative;
+                    overflow: hidden;
+                }
+                    .mainNav a:hover{
+                        background: linear-gradient(to bottom, #464646, black);
+                    }
+                    .mainNav a span{
+                        display: none;
+                    }
+
+                .mainNav a.active{
+                    color: rgba(255,255,255,.75);
+                }
+
+                    .mainNav a.active span{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background: black;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        left: 45%;
+                        bottom: -5px;
+                    }
+
+                    .mainNav a:before,
+                    .mainNav a:last-child:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 25%;
+                        left: 0;
+                        width: 1px;
+                        height: 30px;
+                        background: black;
+                    }
+
+                    .mainNav a:last-child:after{
+                        left: auto;
+                        right: 0;
+                    }
