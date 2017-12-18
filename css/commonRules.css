@@ -352,6 +352,61 @@
         .mainContacts{
             margin-bottom: 2.5555556rem;
         }
+            #feedback{
+                position: absolute;
+                width: 33.33333333%;
+                left: 0;
+                top: 0;
+                border: solid 2px #0072bc;
+                padding: 15px;
+            }
+                #feedback>*:not(.toClose){
+                    display: block;
+                    width: 100%;
+                    padding: 7px 15px;
+                    border: solid 1px rgba(0,0,0,.25);
+                    margin-bottom: 15px;
+                }
+                    #feedback .toClose{
+                        position: absolute;
+                        right: -7px;
+                        top: -7px;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: #0072bc;
+                        cursor: pointer;
+                    }
+                        #feedback .toClose span{
+                            display: block;
+                            width: 11px;
+                            height: 2px;
+                            background: white;
+                            border-radius: 2px;
+                        }
+
+                        #feedback .toClose span:first-child{
+                            transform-origin: 1px;
+                            transform: rotate(45deg) translate(5px);
+                        }
+                        #feedback .toClose span:last-child{
+                            transform-origin: right top;
+                            transform: rotate(-50deg) translate(-1px);
+                        }
+                    #feedback textarea{
+                        resize: none;
+                    }
+
+                    #feedback input[type=submit]{
+                        width: 50%;
+                        margin: 0 auto;
+                        background: black;
+                        border-radius: 15px;
+                        color: white;
+                        outline: none;
+                        cursor: pointer;
+                    }
+
             .mapKeeper{
                 box-shadow: 0 0 30px rgba(0,0,0,.5);
                 margin-bottom: 2.5555556rem;
