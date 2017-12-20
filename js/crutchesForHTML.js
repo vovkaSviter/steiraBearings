@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('body').css('padding-top' , linkHeight*1.25)
     });
 
-    //    Nav behaviour
+    //  Nav behaviour
         $(function(){
            $('.switch').click(function(){
                $('.mainNavSmall').toggleClass('opened');
@@ -34,4 +34,39 @@ $(document).ready(function(){
 
         });
 
+    //  prodItems height
+        $(function(){
+            var item = $('.prodMasonry .item');
+            var width = item.width();
+            var slider = $('.prodMasonry .slider');
+            $(item).css('height' , width);
+            $(slider).css('height' , width*2);
+        });
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

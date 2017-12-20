@@ -12,6 +12,7 @@
             b.1.5. Footer
             b.1.6. Contacts
             b.1.7. Nav
+            b.1.8. Products
 */
 
 /*a. Overall styles*/
@@ -557,3 +558,36 @@
                             text-decoration: none;
                             color: white;
                         }
+
+    /*b.1.8. Products*/
+        .prodKeeper{
+            border: solid 2px #e1e1e1;
+        }
+            .prodKeeper .prodList h2{
+
+            }
+
+                .prodMasonry .item{
+                    background-position: center 15%;
+                    background-size: 60%;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    text-align: center;
+                    transition: all .5s;
+                    padding-bottom: 10px;
+                }
+                .prodMasonry .item:hover{
+                    cursor: pointer;
+                    color: #0072bc;
+                    box-shadow: 0 0 30px 15px #e1e1e1;
+                }
+                    /*temp*/
+                    .prodMasonry .item:nth-child(even){
+                        background-image: url("../imgs/item.png");
+                    }
+                    .prodMasonry .item:nth-child(odd){
+                        background-image: url("../imgs/item1.png");
+                    }
+
