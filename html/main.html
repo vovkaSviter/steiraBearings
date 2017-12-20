@@ -136,17 +136,23 @@
                                 <div class="col-xs-12 col-md-3 prodList">
                                     <h2>Подшипники</h2>
                                     <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>Подшипник номер 1</li>
+                                        <li>Подшипник номер 2</li>
+                                        <li>Подшипник номер 3</li>
+                                        <li>Подшипник номер 4</li>
+                                        <li>Подшипник номер 5</li>
+                                        <li>Подшипник номер 6</li>
+                                        <li>Подшипник номер 7</li>
                                     </ul>
                                 </div>
-                                <div class="hidden-xs col-md-9 prodMasonry">
+                                <div class="hidden-xs hidden-sm col-md-9 prodMasonry">
                                     <div class="row">
                                         <div class="prodItems">
                                             <div class="row">
-                                                <div class="col-md-3 slider">slider</div>
+                                                <div class="col-md-3 slider">
+                                                    <div class="filter"></div>
+                                                    <a href="#">Скачать то-то, то-то</a>
+                                                </div>
                                                 <div class="col-md-3 item">Подпись 1</div>
                                                 <div class="col-md-3 item">Подпись 2</div>
                                                 <div class="col-md-3 item">Длинннннная подпись 3</div>
@@ -155,7 +161,29 @@
                                                 <div class="col-md-3 item">Boo</div>
                                             </div>
                                         </div>
-                                        <div class="prodOwl">Owl</div>
+                                        <div id="prodOwl1" class="prodOwl owl-carousel">
+                                            <div>
+                                                <img src="../imgs/clt3.png">
+                                            </div>
+                                            <div>
+                                                <img src="../imgs/clt5.png">
+                                            </div>
+                                            <div>
+                                                <img src="../imgs/clt3.png">
+                                            </div>
+                                            <div>
+                                                <img src="../imgs/clt5.png">
+                                            </div>
+                                            <div>
+                                                <img src="../imgs/clt3.png">
+                                            </div>
+                                            <div>
+                                                <img src="../imgs/clt5.png">
+                                            </div>
+                                            <div>
+                                                <img src="../imgs/clt3.png">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +249,7 @@
                     <h2 class="col-xs-6 col-xs-offset-3 col-md-offset-1 col-md-2">Наши клиенты</h2>
                 </div>
                 <div class="row">
-                    <div class="owl-carousel col-xs-12 col-md-offset-1 col-md-10">
+                    <div id="clientsOwl" class="owl-carousel col-xs-12 col-md-offset-1 col-md-10">
                         <div>
                             <img src="../imgs/clt1.png">
                         </div>
@@ -343,7 +371,7 @@
 <script src="../owlCarousel/dist/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function(){
-        $(".owl-carousel").owlCarousel(
+        $("#clientsOwl").owlCarousel(
             options = {
                 items: 6,
                 responsive: {
@@ -360,7 +388,27 @@
                 margin: 15
             }
         );
+
+        $("#prodOwl1").owlCarousel(
+            options = {
+                items: 5,
+                responsive: {
+                    0 : {
+                        items: 2
+                    },
+                    991 : {
+                        items: 5
+                    }
+                },
+                nav: true,
+                navText: ["<img src='../imgs/prevArr.png'>" , "<img src='../imgs/nextArr.png'>"],
+                dots: false,
+                margin: 15
+            }
+        );
+
     });
+
 </script>
 
 </body>
