@@ -211,9 +211,11 @@
 
     /*b.1.2. Advantages*/
         .mainAdvantages{
-            border: solid 5px rgba(0,0,0,.25);
             margin-top: 2.5555556rem;
         }
+            .mainAdvantages .container{
+                border: solid 5px rgba(0,0,0,.25);
+            }
             .mainAdvantages .h1Like{
                 margin-top: -1.2777778rem;
                 margin-bottom: 1.2777778rem;
@@ -280,10 +282,11 @@
         .mainClients{
             margin-top: 5.1111112rem;
             margin-bottom: 5.1111112rem;
-            border: solid 1px #e10908;
             padding-bottom: 2.5555556rem;
         }
-
+            .mainClients .container{
+                border: solid 1px #e10908;
+            }
 
             .mainClients h2{
                 font-family: RCBoldItalic;
@@ -355,6 +358,9 @@
         .mainContacts{
             margin-bottom: 2.5555556rem;
         }
+            .mainContacts .container{
+                position: relative;
+            }
             #feedback{
                 position: absolute;
                 width: 33.33333333%;
