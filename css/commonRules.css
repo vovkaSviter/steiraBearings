@@ -41,7 +41,7 @@
         font-family: RCRegular;
         font-size: 1rem;
         line-height: 1.2777778rem;
-        overflow: hidden;
+        overflow-x: hidden;
     }
         h1,
         .h1Like{
