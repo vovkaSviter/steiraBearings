@@ -13,6 +13,9 @@
             b.1.6. Contacts
             b.1.7. Nav
             b.1.8. Products
+        c.1 Item Backbone
+            c.1.1 Breadcrumbs
+            c.1.2 itemDescription
 */
 
 /*a. Overall styles*/
@@ -160,7 +163,7 @@
             }
             .searchKeeper{
                 margin-top: 2.5555556rem;
-                padding-bottom: 10.2222224rem;
+                padding-bottom: 5.1111112rem;
                 background: url("../imgs/headerBG.png") center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -663,3 +666,82 @@
                     height: 30px;
                 }
 
+    /*c.1.1 Breadcrumbs*/
+        .breadCrumbs a{
+            color: #0072bc;
+            padding-right: 1.2222222rem;
+            position: relative;
+        }
+            .breadCrumbs a:not(:last-child):after{
+                content: '\/';
+                position: absolute;
+                bottom: 0;
+                right: .3194445rem;
+            }
+        .breadCrumbs a.active{
+            color: black;
+        }
+
+    /*c.1.2 itemDescription*/
+        .itemDetails .itemSubNav .block{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+            .itemDetails .itemSubNav .block>div{
+                border: solid 1px #e1e1e1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url("../imgs/subNav2.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: auto;
+                transition: all .25s;
+            }
+
+            .itemDetails .itemSubNav .block>div:hover{
+                background: url("../imgs/subNav21.png");
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: auto;
+                transition: all .25s;
+                cursor: pointer;
+                color: #e10908;
+                border: solid 1px #e10908;
+                font-weight: bold;
+            }
+
+        .itemDetails .mainPhoto{
+            background: url("../imgs/itemMainPhoto.png") center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 1.2222222rem;
+        }
+
+        .itemDetails .tags>div{
+            background: url("../imgs/tag.jpg") center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 1.2222222rem;
+        }
+
+        .itemDetails .secondaryPhoto{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .itemDetails .secondaryPhoto>div{
+            height: 100%;
+            background: url("../imgs/itemPhoto.png") center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: solid 1px #e1e1e1;
+        }
+
+        .itemDetails .amountBanner>div{
+            border: solid 2px #e10908;
+            color: #e10908;
+            font-weight: bold;
+            text-align: center;
+            padding: .6388889rem;
+        }
