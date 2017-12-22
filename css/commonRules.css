@@ -723,6 +723,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             margin-bottom: 1.2222222rem;
+            cursor: pointer;
         }
 
         .itemDetails .secondaryPhoto{
@@ -745,3 +746,36 @@
             text-align: center;
             padding: .6388889rem;
         }
+
+        .itemDetails .lettersFirst .price,
+        .itemDetails .lettersFirst .manufacturerLabel,
+        .itemDetails .lettersFirst .placeOfOriginLabel,
+        .itemDetails .lettersFirst .inStock,
+        .itemDetails .lettersFirst .rusDeliveryLabel{
+            margin-bottom: 1.2222222rem;
+        }
+
+        .itemDetails .lettersFirst .price{
+            font-family: RCBoldItalic;
+        }
+            .itemDetails .lettersFirst .orderNow>div{
+                background: #0072bc;
+                color: white;
+                text-align: center;
+                border-radius: 15px;
+                padding-top: .6388889rem;
+                padding-bottom: .6388889rem;
+                cursor: pointer;
+            }
+
+            .itemDetails .lettersSecond .itemCharacteristics{
+                border: solid 1px #e1e1e1;
+            }
+
+            .itemDetails .lettersSecond .itemCharacteristics>div{
+                padding: 5px 15px;
+            }
+
+            .itemDetails .lettersSecond .itemCharacteristics>div.gray{
+                background: #e1e1e1;
+            }
