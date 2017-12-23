@@ -16,6 +16,7 @@
         c.1 Item Backbone
             c.1.1 Breadcrumbs
             c.1.2 itemDescription
+                c.1.2.1. itemNav
 */
 
 /*a. Overall styles*/
@@ -691,19 +692,21 @@
                 border: solid 1px #e1e1e1;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                /*justify-content: center;*/
                 background: url("../imgs/subNav2.png");
                 background-repeat: no-repeat;
                 background-position: left center;
-                background-size: auto;
+                background-size: 30% auto;
                 transition: all .25s;
+                padding-left: 30%;
+                font-weight: bold;
             }
 
             .itemDetails .itemSubNav .block>div:hover{
                 background: url("../imgs/subNav21.png");
                 background-repeat: no-repeat;
                 background-position: left center;
-                background-size: auto;
+                background-size: 30% auto;
                 transition: all .25s;
                 cursor: pointer;
                 color: #e10908;
@@ -739,13 +742,16 @@
             border: solid 1px #e1e1e1;
         }
 
-        .itemDetails .amountBanner>div{
-            border: solid 2px #e10908;
-            color: #e10908;
-            font-weight: bold;
-            text-align: center;
-            padding: .6388889rem;
+        .itemDetails .amountBanner{
+            margin-top: 1.8333333rem;
         }
+            .itemDetails .amountBanner>div{
+                border: solid 2px #e10908;
+                color: #e10908;
+                font-weight: bold;
+                text-align: center;
+                padding: .6388889rem;
+            }
 
         .itemDetails .lettersFirst .price,
         .itemDetails .lettersFirst .manufacturerLabel,
@@ -779,3 +785,86 @@
             .itemDetails .lettersSecond .itemCharacteristics>div.gray{
                 background: #e1e1e1;
             }
+
+            /*c.1.2.1. itemNav*/
+                .itemNav .header{
+                    font-family: RCBoldItalic;
+                    border: solid 1px #e1e1e1;
+                    border-right: solid 2px black;
+                    background: url("../imgs/prodBrgs.jpg");
+                    background-size: 25% auto;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    margin-top: 15px; /*crutch*//*TODO*/
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30%;
+                }
+
+                .itemNav .navList{
+                    list-style: none;
+                }
+                    .itemNav .navList li{
+                        margin-bottom: 15px;
+                    }
+                        .itemNav .navList input[type=checkbox]{
+                            display: none;
+                        }
+
+                        .itemNav .navList label{
+                            cursor: pointer;
+                            position: relative;
+                        }
+                            .itemNav .navList label:before{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: calc(50% - 10px);
+                                left: -30px;
+                                width: 20px;
+                                height: 20px;
+                                border: solid 1px #e1e1e1;
+                                background: none;
+                            }
+
+                        .itemNav .navList input[type=checkbox]:checked + label{
+                            transition: all .25s;
+                        }
+                            .itemNav .navList input[type=checkbox]:checked + label:before{
+                                background: #0072bc;
+                                background-image: url("../imgs/checkMark.png");
+                                background-position: center;
+                                background-size: 75%;
+                                background-repeat: no-repeat;
+                                border: solid 1px black;
+                            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

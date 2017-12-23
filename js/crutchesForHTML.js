@@ -50,7 +50,10 @@ $(document).ready(function(){
             var block = $('.itemSubNav .block>div');
             var width = block.width();
 
+            var asideHeader = $('.itemNav .header');
+
             $(block).css('height' , width/1.75);
+            $(asideHeader).css('height' , width/1.75);
         });
 
         $(function(){
