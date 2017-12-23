@@ -802,7 +802,12 @@
                 }
 
                 .itemNav .navList{
+                    margin-top: 0;
+                    padding-top: 15px;
                     list-style: none;
+                    border-right: solid 1px #e1e1e1;
+                    border-bottom: solid 1px #e1e1e1;
+                    border-left: solid 1px #e1e1e1;
                 }
                     .itemNav .navList li{
                         margin-bottom: 15px;
@@ -838,6 +843,47 @@
                                 background-repeat: no-repeat;
                                 border: solid 1px black;
                             }
+                .itemNav .dimensions .subHeader{
+                    font-family: RCBoldItalic;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    border-bottom: solid 2px #e1e1e1;
+                    padding-bottom: 5px;
+                }
+                    .itemNav .dimensions .subHeader span{
+                        font-family: RCItalic;
+                        color: #0072bc;
+                        text-decoration: underline;
+                        cursor: pointer;
+                        padding-right: 10%;
+                        background-image: url("../imgs/down.png");
+                        background-repeat: no-repeat;
+                        background-size: 10%;
+                        background-position: 100% center;
+                    }
+                        .itemNav .dimensions .subHeader span.opened{
+                            background-image: url("../imgs/up.png");
+                        }
+                .itemNav .inputKeeper{
+                    transition: all 1s;
+                }
+                .itemNav .inputKeeper.closed{
+                    height: 0;
+                    overflow: hidden;
+                }
+                    .itemNav .dimensions input{
+                        display: block;
+                        width: 100%;
+                        margin-top: 10px;border: solid 1px #e1e1e1;
+                        padding: 10px;
+                        outline: none;
+                    }
+                        .itemNav .dimensions input:focus{
+                            color: black;
+                            background: #0072bc;
+                            border: solid 1px black;
+                        }
 
 
 

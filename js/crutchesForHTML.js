@@ -77,6 +77,16 @@ $(document).ready(function(){
             $(secondaryPhoto).css('height' , width);
         });
 
+            //  Aside Filter Behaviour
+                $(function(){
+                    var filterSwitch = $('.itemNav .filterSwitch');
+                    var inputKeeper = $('.itemNav .inputKeeper');
+                    $(filterSwitch).click(function () {
+                       $(this).toggleClass('opened');
+                       $(inputKeeper).toggleClass('closed');
+                    });
+                });
+
 });
 
 
