@@ -87,6 +87,14 @@ $(document).ready(function(){
                     });
                 });
 
+        $(function(){
+            var imgKeeper = $('.itemNav .imgKeeper');
+            var width = $(imgKeeper).width();
+
+            $(imgKeeper).css('height' , width*.75);
+
+        });
+
 });
 
 

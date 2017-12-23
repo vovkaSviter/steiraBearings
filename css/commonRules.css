@@ -843,49 +843,92 @@
                                 background-repeat: no-repeat;
                                 border: solid 1px black;
                             }
-                .itemNav .dimensions .subHeader{
+                .itemNav .dimensions{
+                    margin-bottom: 25px;
+                }
+                    .itemNav .dimensions .subHeader{
+                        font-family: RCBoldItalic;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        border-bottom: solid 2px #e1e1e1;
+                        padding-bottom: 5px;
+                    }
+                        .itemNav .dimensions .subHeader span{
+                            font-family: RCItalic;
+                            color: #0072bc;
+                            text-decoration: underline;
+                            cursor: pointer;
+                            padding-right: 10%;
+                            background-image: url("../imgs/down.png");
+                            background-repeat: no-repeat;
+                            background-size: 10%;
+                            background-position: 100% center;
+                        }
+                            .itemNav .dimensions .subHeader span.opened{
+                                background-image: url("../imgs/up.png");
+                            }
+                    .itemNav .inputKeeper.closed{
+                        height: 0;
+                        overflow: hidden;
+                    }
+                        .itemNav .dimensions input{
+                            display: block;
+                            width: 100%;
+                            margin-top: 10px;border: solid 1px #e1e1e1;
+                            padding: 10px;
+                            outline: none;
+                        }
+                            .itemNav .dimensions input:focus{
+                                color: black;
+                                background: #0072bc;
+                                border: solid 1px black;
+                            }
+                .itemNav .familiar .subHeader{
                     font-family: RCBoldItalic;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
                     border-bottom: solid 2px #e1e1e1;
                     padding-bottom: 5px;
+                    margin-bottom: 15px;
                 }
-                    .itemNav .dimensions .subHeader span{
-                        font-family: RCItalic;
-                        color: #0072bc;
-                        text-decoration: underline;
+
+                .itemNav .familiarCard{
+                    width: 80%;
+                    margin: 15px auto;
+                    padding: 15px;
+                    border: solid 1px #e1e1e1;
+                }
+                    .itemNav .familiarCard .imgKeeper{
+                        background: #e1e1e1;
+                    }
+
+                    .itemNav .familiarCard h2,
+                    .itemNav .familiarCard .addToList{
+                        text-align: center;
+                    }
+
+                    .itemNav .familiarCard .subDimensions>div:first-child,
+                    .itemNav .familiarCard .subDimensions .values{
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .itemNav .familiarCard .addToList{
+                        margin: 15px 0;
+                    }
+
+                    .itemNav .familiarCard .orderNow>div{
+                        background: #0072bc;
+                        color: white;
+                        text-align: center;
+                        border-radius: 15px;
+                        padding-top: .6388889rem;
+                        padding-bottom: .6388889rem;
                         cursor: pointer;
-                        padding-right: 10%;
-                        background-image: url("../imgs/down.png");
-                        background-repeat: no-repeat;
-                        background-size: 10%;
-                        background-position: 100% center;
                     }
-                        .itemNav .dimensions .subHeader span.opened{
-                            background-image: url("../imgs/up.png");
-                        }
-                .itemNav .inputKeeper{
-                    transition: all 1s;
-                }
-                .itemNav .inputKeeper.closed{
-                    height: 0;
-                    overflow: hidden;
-                }
-                    .itemNav .dimensions input{
-                        display: block;
-                        width: 100%;
-                        margin-top: 10px;border: solid 1px #e1e1e1;
-                        padding: 10px;
-                        outline: none;
-                    }
-                        .itemNav .dimensions input:focus{
-                            color: black;
-                            background: #0072bc;
-                            border: solid 1px black;
-                        }
-
-
 
 
 
