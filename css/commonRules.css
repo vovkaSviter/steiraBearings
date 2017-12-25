@@ -21,6 +21,7 @@
             d.1.1. Cat itemNav
             d.1.2. Cat List
             d.1.3. Cat Seo
+            d.1.4. Cat Pagination
 */
 
 /*a. Overall styles*/
@@ -1046,7 +1047,23 @@
             background-repeat: no-repeat;
         }
 
-
+    /*d.1.4. Cat Pagination*/
+    .itemSubDetails .pagination{
+        text-align: center;
+    }
+        .itemSubDetails .pagination span{
+            display: inline-block;
+            padding: 3px;
+            border: solid 1px #e1e1e1;
+            cursor: pointer;
+        }
+        .itemSubDetails .pagination span.active{
+            border: solid 1px #e10908;
+            color: #e10908;
+        }
+        .itemSubDetails .pagination span.divider{
+            border: none;
+        }
 
 
 
