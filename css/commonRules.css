@@ -681,6 +681,7 @@
             }
         .breadCrumbs a.active{
             color: black;
+            text-decoration: none;
         }
 
     /*c.1.2 itemDescription*/
@@ -692,7 +693,6 @@
                 border: solid 1px #e1e1e1;
                 display: flex;
                 align-items: center;
-                /*justify-content: center;*/
                 background: url("../imgs/subNav2.png");
                 background-repeat: no-repeat;
                 background-position: left center;
@@ -820,6 +820,14 @@
                             cursor: pointer;
                             position: relative;
                         }
+
+                .itemNav .filterSpecs .navList{
+                    border: none;
+                }
+                        .itemNav .filterSpecs .navList label{
+                            color: #8d8d8d;
+                            text-transform: lowercase;
+                        }
                             .itemNav .navList label:before{
                                 content: '';
                                 display: block;
@@ -929,6 +937,22 @@
                         padding-bottom: .6388889rem;
                         cursor: pointer;
                     }
+                .itemNav h4{
+                    margin-bottom: 0;
+                }
+
+                .itemNav .filterBtn{
+                    width: 70%;
+                    margin: 0 auto;
+                    background: black;
+                    color: white;
+                    font-family: RCBoldItalic;
+                    border-radius: 25px;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                }
 
 
 
