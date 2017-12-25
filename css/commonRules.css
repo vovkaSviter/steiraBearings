@@ -905,27 +905,38 @@
                     padding: 15px;
                     border: solid 1px #e1e1e1;
                 }
-                    .itemNav .familiarCard .imgKeeper{
+                .catKeeper .familiarCard{
+                    padding: 15px;
+                    border: solid 1px #e1e1e1;
+                }
+                    .itemNav .familiarCard .imgKeeper,
+                    .catKeeper .familiarCard .imgKeeper{
                         background: #e1e1e1;
                     }
 
                     .itemNav .familiarCard h2,
-                    .itemNav .familiarCard .addToList{
+                    .itemNav .familiarCard .addToList,
+                    .catKeeper .familiarCard h2,
+                    .catKeeper .familiarCard .addToList{
                         text-align: center;
                     }
 
                     .itemNav .familiarCard .subDimensions>div:first-child,
-                    .itemNav .familiarCard .subDimensions .values{
+                    .itemNav .familiarCard .subDimensions .values,
+                    .catKeeper .familiarCard .subDimensions>div:first-child,
+                    .catKeeper .familiarCard .subDimensions .values{
                         font-weight: bold;
                         display: flex;
                         justify-content: space-between;
                     }
 
-                    .itemNav .familiarCard .addToList{
+                    .itemNav .familiarCard .addToList,
+                    .catKeeper .familiarCard .addToList{
                         margin: 15px 0;
                     }
 
-                    .itemNav .familiarCard .orderNow>div{
+                    .itemNav .familiarCard .orderNow>div,
+                    .catKeeper .familiarCard .orderNow>div{
                         background: #0072bc;
                         color: white;
                         text-align: center;
@@ -995,6 +1006,10 @@
         .itemSubDetails.catalog .switch>div.masonry:hover span{
             border: solid 2px black;
         }
+    .familiarCard.catTypeMasonry{
+        margin-top: 15px;
+    }
+
 
 
 
