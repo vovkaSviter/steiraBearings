@@ -95,6 +95,34 @@ $(document).ready(function(){
 
         });
 
+            //catType behaviour
+
+        $(function(){
+            var switchItem = $('.switch>div');
+            $(switchItem).click(function() {
+                var catType = $(this).attr('data-catType');
+                var catKeeper = $('.catKeeper');
+                $(catKeeper).attr('data-type' , catType);
+
+                if ($(catKeeper).attr('data-type') == 'list' ){
+                    var i;
+                    var itemsList = '';
+                    for(i = 0; i < 8; ++i){
+                        itemsList += "<p>List paragraph</p>";
+                        $(catKeeper).html(itemsList);
+                    }
+                } else {
+                    var x;
+                    var itemsMasonry = '';
+                    for(x = 0; x < 12; ++x){
+                        itemsMasonry += "<p>2</p>";
+                        $(catKeeper).html(itemsMasonry);
+                    }
+                }
+
+            })
+        });
+
 });
 
 
