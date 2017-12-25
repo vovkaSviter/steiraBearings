@@ -109,10 +109,10 @@ $(document).ready(function(){
                     var i;
                     var itemsList = '';
                     for(i = 0; i < 8; ++i){
-                        itemsList += "<div class=\"catItemList col-xs-12\">\n" +
+                        itemsList += "<div class=\"catItemList smallTxt col-xs-12\">\n" +
                             "                                            <div class=\"row\">\n" +
-                            "                                                <div class=\"imgKeeper col-xs-12 col-md-2\" style=\"height: 50px; background: cadetblue\"></div>\n" +
-                            "                                                <div class=\"title col-xs-12 col-md-4\">\n" +
+                            "                                                <div class=\"imgKeeper col-xs-12 col-md-2\"></div>\n" +
+                            "                                                <div class=\"title col-xs-12 col-md-3\">\n" +
                             "                                                    Подшипник 51100\n" +
                             "                                                </div>\n" +
                             "                                                <div class=\"hidden-xs hidden-sm col-md-2 inStock\">\n" +
@@ -132,7 +132,7 @@ $(document).ready(function(){
                             "                                                    </div>\n" +
                             "                                                </div>\n" +
                             "\n" +
-                            "                                                <div class=\"col-xs-12 col-md-2 addOrder\">\n" +
+                            "                                                <div class=\"col-xs-12 col-md-3 addOrder\">\n" +
                             "                                                    <div class=\"addToList\">\n" +
                             "                                                        <a href=\"#\" class=\"smallTxt\">Отложить в список &rarr;</a>\n" +
                             "                                                    </div>\n" +
@@ -150,7 +150,7 @@ $(document).ready(function(){
                     var itemsMasonry = '';
                     for(x = 0; x < 12; ++x){
                         itemsMasonry += "<div class=\"col-xs-12 col-md-3\">\n" +
-                            "                                            <div class=\"familiarCard catTypeMasonry\">\n" +
+                            "                                            <div class=\"familiarCard smallTxt catTypeMasonry\">\n" +
                             "                                                <div class=\"imgKeeper\"></div>\n" +
                             "                                                <h2>Подшипник 51102</h2>\n" +
                             "                                                <div class=\"subDimensions\">\n" +
@@ -178,9 +178,6 @@ $(document).ready(function(){
                 }
 
             });
-
-
-
         });
 
 });

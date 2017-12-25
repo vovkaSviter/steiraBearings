@@ -1006,6 +1006,32 @@
         .itemSubDetails.catalog .switch>div.masonry:hover span{
             border: solid 2px black;
         }
+    .catItemList{
+        margin-bottom: 15px;
+        border-bottom: solid 1px #e1e1e1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        min-height: 100px;
+    }
+        .catItemList>.row,
+        .catItemList>.row>*{
+            min-height: 70px;
+        }
+    .catItemList .imgKeeper{
+        background: url("../imgs/itemPhoto.png") center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .catItemList .title,
+    .catItemList .inStock{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    
+
     .familiarCard.catTypeMasonry{
         margin-top: 15px;
     }
