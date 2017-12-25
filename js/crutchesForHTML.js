@@ -180,6 +180,13 @@ $(document).ready(function(){
             });
         });
 
+    $(function(){
+        var height = $('.seoShit .textKeeper').outerHeight();
+        var imgKeeper = $('.seoShit .imgKeeper');
+
+        $(imgKeeper).css('height' , height);
+    });
+
 });
 
 
