@@ -13,10 +13,13 @@
             b.1.6. Contacts
             b.1.7. Nav
             b.1.8. Products
-        c.1 Item Backbone
-            c.1.1 Breadcrumbs
-            c.1.2 itemDescription
+        c.1. Item Backbone
+            c.1.1. Breadcrumbs
+            c.1.2. itemDescription
                 c.1.2.1. itemNav
+        d.1. Cat Backbone
+            d.1.1. Cat itemNav
+            d.1.2. Cat List
 */
 
 /*a. Overall styles*/
@@ -821,13 +824,7 @@
                             position: relative;
                         }
 
-                .itemNav .filterSpecs .navList{
-                    border: none;
-                }
-                        .itemNav .filterSpecs .navList label{
-                            color: #8d8d8d;
-                            text-transform: lowercase;
-                        }
+
                             .itemNav .navList label:before{
                                 content: '';
                                 display: block;
@@ -941,20 +938,63 @@
                     margin-bottom: 0;
                 }
 
-                .itemNav .filterBtn{
-                    width: 70%;
-                    margin: 0 auto;
-                    background: black;
-                    color: white;
-                    font-family: RCBoldItalic;
-                    border-radius: 25px;
-                    text-align: center;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    cursor: pointer;
+    /*d.1.1. Cat itemNav*/
+        .itemNav .filterSpecs .navList{
+            border: none;
+        }
+                .itemNav .filterSpecs .navList label{
+                    color: #8d8d8d;
+                    text-transform: lowercase;
                 }
 
+        .itemNav .filterBtn{
+            width: 70%;
+            margin: 0 auto;
+            background: black;
+            color: white;
+            font-family: RCBoldItalic;
+            border-radius: 25px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
 
+    /*d.1.2. Cat List*/
+        .itemSubDetails.catalog .h1Like{
+            text-align: center;
+        }
+
+        .itemSubDetails.catalog .switch>div{
+            float: right;
+            cursor: pointer;
+            width: 22px;
+        }
+
+        .itemSubDetails.catalog .switch>div.list span{
+            display: block;
+            width: 15px;
+            height: 3px;
+            background: #8d8d8d;
+            margin: 3px auto;
+        }
+
+        .itemSubDetails.catalog .switch>div.list:hover span{
+            background: black;
+        }
+
+        .itemSubDetails.catalog .switch>div.masonry span{
+            display: block;
+            width: 8px;
+            height: 8px;
+            border: solid 2px #8d8d8d;
+            float: left;
+            margin: 1px;
+        }
+
+        .itemSubDetails.catalog .switch>div.masonry:hover span{
+            border: solid 2px black;
+        }
 
 
 
